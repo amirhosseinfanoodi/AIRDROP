@@ -1,0 +1,68 @@
+
+.major-1
+{
+  background: url('./../../../public/images/major/1.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.major-2
+{
+  background: url('./../../../../public/images/major/2.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body
+{
+  background: #2c3940;
+  overflow: hidden;
+}
+
+.custom-button
+{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.custom-button-text
+{
+  background: #ffc107;
+  color: #e65100;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:hover .custom-button-text
+{
+  color: #2c3940;
+  background: white;
+  box-shadow: 0px 17px 18px -14px rgba(0, 0, 0, 0.08);
+}
+
+.custom-button:hover .button_spots
+{
+  animation: spew 1s forwards;
+}
+
+.button_spots
+{
+  position: absolute;
+  border-radius: 100px;
+  background: green;
+  opacity: 0;
+}
+
+@keyframes spew
+{
+  0% { opacity: 0; }
+  100% { opacity: 0.1; transform: translateY(-30px) translateX(10px); }
+}
